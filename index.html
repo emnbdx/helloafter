@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HelloAfter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>...</h1>
+    </div>
+    <script>
+        function updateMessage() {
+            var text = document.querySelector('h1')
+            text.innerHTML = 'Rien n\'est prévu pour le moment'
+    
+            var today = new Date()
+            if(today.getDay() == 5) {
+                text.innerHTML = 'Rien n\'est prévu pour le moment, mais bon un vendredi ...'
+            }
+        }
+    
+        updateMessage()
+    </script>
+</body>
+
+</html>
